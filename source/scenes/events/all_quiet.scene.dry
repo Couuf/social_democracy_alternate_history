@@ -39,7 +39,7 @@ Under the protection of the police, the people are allowed to watch the film in 
 @everyone
 choose-if: prussian_police_loyalty >= 0.75
 unavailable-subtitle: The police are unable to guarantee the safety of all the attendees.
-on-arrival: nationalism -= 5; pro_republic += 5*(1-dissent); workers_nsdap -= 3; unemployed_nsdap -= 3; new_middle_nsdap -= 3
+on-arrival: nationalism -= 5; pro_republic += 5*(1-dissent); workers_nsdap -= 15; unemployed_nsdap -= 15; new_middle_nsdap -= 15; workers_spd += 15; new_middle_spd += 15
 
 Under police protection, crowds throng the film's showings, as Nazis protest outside. The reception is mixed, but a new national conversation develops, reexamining the right-wing histories of the war. Quietly, many minds are changed, or at least affected in subtle ways.
 
