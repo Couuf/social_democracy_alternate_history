@@ -35,7 +35,18 @@ A constitutional reform requires either a two-thirds supermajority in the Reichs
 
 @dictator_threshold
 subtitle: Change the vote threshold to 30% for parties to be represented in the Reichstag. The other parties will not support this under any circumstances, as this will essentially establish a one party state under the SPD.
-on-arrival: Q.reform_support = Q.spd_normalized;
+on-arrival: {!
+Q.reform_support = Q.spd_normalized;
+if (Q.z_relation > 100) {
+    Q.reform_support += Q.z_normalized - 0.03;
+}
+if (Q.kpd_relation > 100 && Q.kpd_normalized >= 0.1) {
+    Q.reform_support += Q.kpd_normalized;
+}
+if (Q.nsdap_normalized >= 10 ) {
+    Q.reform_support += Q.nsdap_normalized;
+}
+!}
 view-if: electoral_threshold = 0
 
 # The left is opposed to this.
