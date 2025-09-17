@@ -33,5 +33,5 @@ Cutting welfare improves our relationship with the capitalists, but it hurts our
 Realistically, there is nothing we can do.
 
 @watch
-
+on-arrival: unemployed_spd += 5; workers_spd += 2; old_middle_spd -= 10
 Presumably, we have an economic plan that will lead us out of the crisis. The capitalists do not trust us, but we will show them eventually.
