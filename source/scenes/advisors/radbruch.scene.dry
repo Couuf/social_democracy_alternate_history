@@ -12,6 +12,7 @@ Gustav Radbruch is a renowned legal scholar and long-time SPD justice minister.
 
 - @judiciary_
 - @constitutional_reform_
+- @bigcheat_
 - @root: Return to main
 
 
@@ -23,6 +24,12 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 on-arrival: advisor_action_timer = 6; judiciary_timer -= 6; last_advisor_action = 1
 go-to: judiciary
 
+@bigcheat_
+title: Reset Advisor Timer
+subtitle: Resets the timer.
+choose-if: advisor_action_timer > 0
+unavailable-subtitle: Not necessary.
+on-arrival: advisor_action_timer = 0;
 
 @constitutional_reform_
 title: Constitutional Reform
