@@ -31,6 +31,13 @@ choose-if: advisor_action_timer > 0
 unavailable-subtitle: Not necessary.
 on-arrival: advisor_action_timer = 0;
 
+@nodissent_
+title: Quash Party Dissent
+subtitle: They better get in line
+choose-if: 1==1
+unavailable-subtitle: Not necessary.
+on-arrival: left_dissent = -10; labor_dissent = -10; reformist_dissent = -10; center_dissent = -10
+
 @constitutional_reform_
 title: Constitutional Reform
 subtitle: Pursue reforms of the inadequate Weimar Constitution.
