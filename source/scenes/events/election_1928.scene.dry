@@ -342,34 +342,34 @@ We have secured a total grip over the republic; coalitions are unnecessary, as a
 
 Who will be chancellor?
 
-- @braun_majority_chancellor: Otto Braun for Chancellor.
-- @breitscheid_majority_chancellor: Rudolf Breitscheid for Chancellor.
-- @muller_majority_chancellor: Hermann Müller for Chancellor.
-- @wels_majority_chancellor: Otto Wels for Chancellor.
+- @braun_totality_chancellor: Otto Braun for Chancellor.
+- @breitscheid_totality_chancellor: Rudolf Breitscheid for Chancellor.
+- @muller_totality_chancellor: Hermann Müller for Chancellor.
+- @wels_totality_chancellor: Otto Wels for Chancellor.
 
-@braun_majority_chancellor
+@braun_totality_chancellor
 view-if: not historical_mode or not spd_prussia
 on-arrival: chancellor = "Braun"
 
 [? if president == "Braun": Our experts have checked the constitution, and have discovered that there is no specific prohibition against the Chancellor also being the President (the President may not be a member of the Reichstag; there is no law saying that the Chancellor must be a member of the Reichstag). Thus, we have Chancellor-President Otto Braun. ?]
-[? if president != "Braun": Otto Braun has become chancellor of the SPD majority. ?]
+[? if president != "Braun": Otto Braun has become chancellor of the SPD-only government. ?]
 
-@breitscheid_majority_chancellor
+@breitscheid_totality_chancellor
 on-arrival: chancellor = "Breitscheid"
 
-Rudolf Breitscheid has become chancellor of the SPD majority.
+Rudolf Breitscheid has become chancellor of the SPD-only government.
 
-@muller_majority_chancellor
+@muller_totality_chancellor
 view-if: muller_dead = 0
 on-arrival: chancellor = "Müller"
 
-Hermann Müller has become chancellor of the SPD majority.
+Hermann Müller has become chancellor of the SPD-only government.
 
-@wels_majority_chancellor
+@wels_totality_chancellor
 view-if: muller_dead = 1
 on-arrival: chancellor = "Wels"
 
-Otto Wels has become chancellor of the SPD majority.
+Otto Wels has become chancellor of the SPD-only government.
 
 
 @popular_front_coalition
