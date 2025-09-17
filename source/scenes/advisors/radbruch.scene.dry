@@ -14,6 +14,7 @@ Gustav Radbruch is a renowned legal scholar and long-time SPD justice minister.
 - @constitutional_reform_
 - @nodissent_
 - @bigcheat_
+- @resetactions_
 - @root: Return to main
 
 
@@ -31,6 +32,13 @@ subtitle: Resets the timer.
 choose-if: advisor_action_timer > 0
 unavailable-subtitle: Not necessary.
 on-arrival: advisor_action_timer = 0;
+
+@resetactions_
+title: Reset Month Actions
+subtitle: Monthly actions at [+ month_actions +]
+choose-if: month_actions > 1
+unavailable-subtitle: you aint done shit
+on-arrival: month_actions = 0
 
 @nodissent_
 title: Quash Party Dissent
